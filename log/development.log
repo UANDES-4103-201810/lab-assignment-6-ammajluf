@@ -1412,3 +1412,434 @@ Processing by SessionsController#new as HTML
 Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-04-17 12:57:47 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (26.6ms)
+Completed 200 OK in 2236ms (Views: 2229.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 12:57:55 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (62.8ms)
+Completed 200 OK in 101ms (Views: 96.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-17 13:38:13 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 217ms (Views: 207.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 13:38:16 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 31ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 13:38:37 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mCLM/ORHD0n5JlYbqSo8tao3M1L7EBcTY7k7o0xEKk54pSO2BV0uxTqS8Fzv1t4Nx90fY8GYG+SMpz5Wxgx2wQ==", "registrations"=>{"name"=>"Alvaro", "last_name"=>"Majluf", "email"=>"alvaro@ue.cl", "phone"=>"324234234234", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Completed 500 Internal Server Error in 214ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `user_params' for #<RegistrationsController:0x007fb8cc061e68>
+Did you mean?  user_path):
+  
+app/controllers/registrations_controller.rb:7:in `create'
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 13:47:31 -0300
+Processing by RegistrationsController#create as HTML
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 13:47:41 -0300
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NzpdE49+nzQmXRGSE+WL3c5EPApEXvwlxPx/bmn4b52bZyTeKgcmHW2phdHFuTImDoMMBV9qpy5kgQNRi88oHg==", "registrations"=>{"name"=>"Alvaro", "last_name"=>"Majluf", "email"=>"alvaro@ue.cl", "phone"=>"324234234234", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Completed 500 Internal Server Error in 224ms
+
+
+  
+NameError (undefined local variable or method `user_params' for #<RegistrationsController:0x00000003d9efd8>
+Did you mean?  user_path):
+  
+app/controllers/registrations_controller.rb:8:in `create'
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 19ms (Views: 17.7ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 13:47:52 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DW2Os+aOzljBEHhVCHN6hIqJ5La2BgCisAAnXmSgg2ehMPd+Q/d3cYrk7BbeL8N/Sk7Uua0yW6kQfVthhpfE5A==", "registrations"=>{"name"=>"Alvaro", "last_name"=>"Majluf", "email"=>"alvaro@ue.cl", "phone"=>"324234234234", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Completed 500 Internal Server Error in 152ms
+
+
+  
+NameError (undefined local variable or method `user_params' for #<RegistrationsController:0x007fb8d1e465b0>
+Did you mean?  user_path):
+  
+app/controllers/registrations_controller.rb:8:in `create'
+Started GET "/" for 127.0.0.1 at 2018-04-17 13:53:28 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 17ms (Views: 15.4ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 13:53:31 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 31ms (Views: 26.0ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 13:53:40 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0v02js6JZWSgLVWG4YOexVCJdcJzbQZbOFd8+UFnyooyetnEL5NE6GOZ88Gnf3x9PWNZ80nlCqzXSXkMyy+WBQ==", "registrations"=>{"name"=>"Alvaro", "last_name"=>"Majluf", "email"=>"alvaro@ue.cl", "phone"=>"324234234234", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Redirected to http://localhost:3000/users
+Completed 302 Found in 1ms
+
+
+Started GET "/users" for 127.0.0.1 at 2018-04-17 13:53:40 -0300
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :is_user_logged_in? rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-17 13:53:40 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 23ms (Views: 22.3ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 13:53:55 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 42ms (Views: 39.5ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 13:54:06 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4P1iUyTjmf1AyfbWVzrLMReMF9M57pmcQXuOoKc5YW8Aeo0Zxfm4cYN9UJERximJemY74gNmlWuuZYtVLXE94A==", "registrations"=>{"name"=>"Alvaro", "last_name"=>"Majluf", "email"=>"alvaro@ue.cl", "phone"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Redirected to http://localhost:3000/users
+Completed 302 Found in 1ms
+
+
+Started GET "/users" for 127.0.0.1 at 2018-04-17 13:54:06 -0300
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :is_user_logged_in? rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-17 13:54:06 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 35ms (Views: 34.3ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 13:54:07 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 32ms (Views: 31.0ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 13:54:18 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3HUYJhfl3iEkBGlcVf4uzSjv444ur73dWkUFgixrXMo88vds9v//reewzxsTAsx1RQXPvxQnsSq1WwB3piMARQ==", "registrations"=>{"name"=>"Alvaro", "last_name"=>"Majluf", "email"=>"alvaro@ue.cl", "phone"=>"324234234234", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Redirected to http://localhost:3000/users
+Completed 302 Found in 1ms
+
+
+Started GET "/users" for 127.0.0.1 at 2018-04-17 13:54:18 -0300
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :is_user_logged_in? rendered or redirected
+Completed 302 Found in 3ms
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-17 13:54:18 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 31ms (Views: 30.3ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-04-17 13:54:25 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IcnTzjUxT17cujwotWCZ1Pfkga9r7lbFf+JAXZ0o4cyNlKoDkEj2d5dOqGtjPCAvNyOxoHDaDc7fnzxifx+mTw==", "session"=>{"email"=>"alvaro@ue.cl", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 24ms
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 13:54:37 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 40ms (Views: 38.7ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 13:55:02 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/jV9VgD5wS6Wg01xXDgAerb4dr+dY2mPls5VjLaXvmIespIc4ePgolU36zYaxOLC2xJajqfrZXh50FB5PN/i7Q==", "registrations"=>{"name"=>"asdf", "last_name"=>"qwerty", "email"=>"asdf@uc.cl", "phone"=>"12345678", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+Redirected to http://localhost:3000/users
+Completed 302 Found in 13ms
+
+
+Started GET "/users" for 127.0.0.1 at 2018-04-17 13:55:02 -0300
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :is_user_logged_in? rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-17 13:55:02 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 22ms (Views: 20.5ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-04-17 13:55:07 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bV3Syg0M72HBkAVqhtzzJNKv351H9GxSmChY+wniDLDBAKsHqHVWSIpkkSlQgErfEmjvklzAN1k4VSTE69VLMw==", "session"=>{"email"=>"asdf@uc.cl", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 20ms
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 14:00:18 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 20ms (Views: 18.9ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-04-17 14:03:43 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pq/XkK1Vr00kp2CT0bk8THocDB/nM3Yhl8EQwXZbFOkK8q5dCCwWZG9T9NAH5YW3uts8EPwHLSo3vGz+lGxTag==", "session"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 18ms
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 14:03:44 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 30ms (Views: 26.5ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 14:14:55 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 40ms (Views: 31.9ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 14:14:59 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 28ms (Views: 26.6ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 14:15:25 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fcvZLizvLDfZvYg9q8ij3XoZ+NFdHnYqZHc8EKR9herRlqDjiZaVHpJJHH59lBomut7I3kYqLSHECkAvRkrCaQ==", "registrations"=>{"name"=>"aaaaa", "last_name"=>"bbbbb", "email"=>"ab@miuandes.cl", "phone"=>"12345678", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ab@miuandes.cl"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 305ms (Views: 24.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-17 14:16:29 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 192ms (Views: 180.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 14:16:31 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 47ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 14:16:43 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LuRsuQfjFPMCQweyc8RYXe44ib7jBB8xfzCEmjKjPO7OY4Pz5vk1f8H3ofU1OLrlg9Klj9mME8aQLoFvuOtgYQ==", "registrations"=>{"name"=>"aaaaa", "last_name"=>"bbbbb", "email"=>"ab@miuandes.cl", "phone"=>"12345678", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ab@miuandes.cl"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 72ms (Views: 46.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 14:20:28 -0300
+Processing by RegistrationsController#new as HTML
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 14:20:38 -0300
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 62ms (Views: 59.8ms)
+
+
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ja+WTup5Uq0mu0kOxaSF17YD7S2bTzXxMhlhs/ujK76J8u+DTwDrhG1P3U0T+DwsdsTdIoB7bvqSZB2MGZRsPQ==", "registrations"=>{"name"=>"Alvaro", "last_name"=>"Majluf", "email"=>"alvaro@ue.cl", "phone"=>"324234234234", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "alvaro@ue.cl"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 56ms (Views: 32.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-17 14:36:02 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 32ms (Views: 30.7ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-04-17 14:36:05 -0300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ef4e3Zy4ewtU8RbXqm0kGx/xgem+p4923wsfGOyegwrVo2cQOcHCIh8FgpR8MZ3g3zax5qWT1H1/dmMnDqnEiQ==", "session"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log In"}
+No template found for SessionsController#create, rendering head :no_content
+Completed 204 No Content in 25ms
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 14:36:06 -0300
+  
+SyntaxError (/home/web/Desktop/lab-assignment-6-ammajluf/app/controllers/registrations_controller.rb:24: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/registrations_controller.rb:24: syntax error, unexpected keyword_end, expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2018-04-17 14:37:00 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 28ms (Views: 26.6ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 14:37:01 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 39ms (Views: 38.0ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 14:37:19 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6oxUvBRb2sDv7hXedixvOQ5AXLih9IVWWtLMr4bkRlEKC7v29UH7TCxas5kw0I2BY6pwiZt8iaG1zMlaDKwa3g==", "registrations"=>{"name"=>"Alvaro", "last_name"=>"Majluf", "email"=>"alvaro@ue.cl", "phone"=>"12345678", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "alvaro@ue.cl"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000registrations#new
+Completed 302 Found in 22ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 14:37:33 -0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 245ms (Views: 235.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 14:37:45 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BCZAuCBo22StVgdbAe0TqIcfSbLXYuGug3MrjB3XJkqoezl1hRFiTeaikxjXsapTR9h5vcxWuqUjDlez/+BhyQ==", "registrations"=>{"name"=>"Alvaro", "last_name"=>"Majluf", "email"=>"alvaro@ue.cl", "phone"=>"12345678", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "alvaro@ue.cl"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000registrations#new
+Completed 302 Found in 23ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-17 14:39:28 -0300
+Processing by SessionsController#new as HTML
+Started GET "/" for 127.0.0.1 at 2018-04-17 14:39:38 -0300
+Started GET "/" for 127.0.0.1 at 2018-04-17 14:39:38 -0300
+Started GET "/" for 127.0.0.1 at 2018-04-17 14:39:38 -0300
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 28ms (Views: 25.9ms)
+
+
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 51ms (Views: 50.5ms)
+
+
+Completed 200 OK in 73ms (Views: 72.1ms)
+
+
+Completed 200 OK in 90ms (Views: 88.4ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 14:39:41 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 50ms (Views: 49.0ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 14:39:52 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3DUSa2ne3t50eEVxZ3vmLgUN1+KeXDhW+wPaIcruLKI8sv0hiMT/UrfM4zYhhwSWaOf706TUNKEUHd/UQKZwLQ==", "registrations"=>{"name"=>"Alvaro", "last_name"=>"Majluf", "email"=>"alvaro@ue.cl", "phone"=>"324234234234", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "alvaro@ue.cl"], ["LIMIT", 1]]
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "last_name", "email", "phone", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Alvaro"], ["last_name", "Majluf"], ["email", "alvaro@ue.cl"], ["phone", "324234234234"], ["password", "12345678"], ["created_at", "2018-04-17 17:39:52.328528"], ["updated_at", "2018-04-17 17:39:52.328528"]]
+  [1m[35m (29.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 66ms (ActiveRecord: 32.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-17 14:39:52 -0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 55ms (Views: 53.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 14:45:07 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for 127.0.0.1 at 2018-04-17 14:45:16 -0300
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DCylcQ15RLDGezqCLiw9gTqEylVKdKRGEH3ySpA7KSvsq0o77GNlPAXPnMVo0N85V27mZHD8qLH/Y/e/GnN1pA==", "registrations"=>{"name"=>"asdasd", "last_name"=>"", "email"=>"asdf@uc.cl", "phone"=>"sdfsdf", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "asdf@uc.cl"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/sign_in" for 127.0.0.1 at 2018-04-17 14:45:16 -0300
+Processing by RegistrationsController#new as HTML
+  Rendering registrations/new.html.erb within layouts/application
+  Rendered registrations/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
